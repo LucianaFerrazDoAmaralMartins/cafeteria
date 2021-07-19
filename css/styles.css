@@ -1,0 +1,60 @@
+/* A aplicação do asterisco (*) no arquivo de CSS informa 
+aos navegadores que TODOS os elementos da tela receberão esta formatação*/
+*{
+    margin:0; /*estamos zerando as margens EXTERNAS dos elementos*/ 
+    padding:0; /*estamos zerando as margens INTERNAS dos elementos*/ 
+
+}
+/* Vamos aplicar na tag header cor de fndo e padding */
+header{
+    /* escrever o caminho da imagem */
+    background-image:url("../img/fundo8.jpg");
+    /* para não repetir a imagem */
+    background-size: 100%;
+    /* deslocar as imagens X e Y*/
+    background-position: 0 -650px;
+    
+    /*  background-color: #dd2c00; */
+    /* cores https://materializecss.com/color.html */
+    padding-top: 150px;
+    /* Efeito animação de transição de um estado para outro */
+    /* tipo de animação EASE, ALL, CUBIC, etc.
+       o tempo em segundos */
+    /* pode ser usado para vários itens */
+    transition: ease 1s;
+}
+/* foormatar a tag h1 que está dentro do header. 
+Veja como fazemos para ficar específica */
+header h1{
+   color:#000; /* cor da letra */
+   font-family: arial; /*mudar o tipo da letra para arial 
+se o nome da fonte tiver espaço tem que ficar entre 
+aspas para não dar erro*/
+   text-align: center; /* alinhamento do texto ao centro */
+}
+header nav{
+    background-color: #600;
+    text-align: center;
+    padding: 5px;
+}
+/* exibir os itens da lista um ao lado do outro. 
+Usaremos o comando display (telaiexibir) 
+lado a lado inline-block (blocos em linha) */
+header nav ul li {
+display:inline-block;
+/* distanciar os itens da lista */
+margin: 5px;
+}
+
+header nav ul li a{
+color: #fff;
+font-family: arial;
+/* retirar a decoração do texto, ou seja, 
+remover o underline */
+text-decoration: none;
+} 
+/* passar o maouse sobre, a pessoa percebe que tem 
+uma interação e um link ali  */
+header nav ul li a:hover{
+color: rgb(255, 106, 47);
+}
