@@ -57,6 +57,7 @@ uma interação e um link ali  */
 header nav ul li a:hover {
   color: rgb(255, 106, 47);
 }
+
 footer {
   /*  aplicar uam cor de fundo ao rodapé */
   background-color: rgb(114, 37, 2);
@@ -102,3 +103,54 @@ footer #redes a img:hover {
   /*realizar uma rotação de 360 graus (deg) */
   transform: rotate(360deg);
 }
+/* --------- Início da formatação da página INDEX --------- */
+main h2 {
+  font-family: arial;
+  font-size: 15pt;
+  margin: 50px;
+  /* uma linha fina */
+  border-bottom: #600 1px solid;
+}
+main p{
+    /* trabalhar o bloco do texto, reduzir a margem esquerda e direita */
+    margin-left: 100px;
+    margin-right: 100px;
+     /* entre um parágrafo e o outro colocar um margem inferior, distanciamento entre os parágrafos */
+    margin-bottom: 30px; 
+    /* justificado */
+    text-align: justify;
+    font-size: 12pt;
+    /* altura da linha (efeito de espaçamento entre linhas) 
+    no word altura de linha = 1,5)*/
+    /* cálculo = tamanho da fonte + 1,5 = 25  */
+    line-height: 25pt;
+    font-family: arial;   
+}
+
+main #imghome{
+    /* centralizar a imagem */
+    text-align: center;
+}
+main #imghome img{
+    /* arredondar os cantos da imagens, preciso de imagens quadradas */
+    /* ideal ter a imagem do tamanho correto */
+    width: 500px; /* largura da imagem */
+    height: 500px;/* altura da imagem */
+    /*  vamos arredondar os cantos da imagem com o comando 
+    border-radius. O valor pode ser em pixel (px) ou porcentagem (50%)*/
+    border-radius: 50%;
+    /* distanciar as imagens uma da outra */
+    margin: 20px;
+    /* efeito desfocado (transparência) de 0 até 1, 0.5 (50%) quando passa o mouse por cima ela aparece */
+    opacity: 0.6;
+    transition: ease 0.5s;
+}
+/* efeito de passar o mouse encima */
+main #imghome img:hover{
+    /* 100% de visibilidade */
+    opacity: 1;
+    /* brincar com o tamanho da imagem, aumento da escala em 10%, se for 20% seria 1.2 */
+    transform: scale(1.1);
+}
+
+/* --------- Fim da formatação da página INDEX --------- */
