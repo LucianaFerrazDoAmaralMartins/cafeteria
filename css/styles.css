@@ -1,60 +1,104 @@
 /* A aplicação do asterisco (*) no arquivo de CSS informa 
 aos navegadores que TODOS os elementos da tela receberão esta formatação*/
-*{
-    margin:0; /*estamos zerando as margens EXTERNAS dos elementos*/ 
-    padding:0; /*estamos zerando as margens INTERNAS dos elementos*/ 
-
+* {
+  margin: 0; /*estamos zerando as margens EXTERNAS dos elementos*/
+  padding: 0; /*estamos zerando as margens INTERNAS dos elementos*/
 }
 /* Vamos aplicar na tag header cor de fndo e padding */
-header{
-    /* escrever o caminho da imagem */
-    background-image:url("../img/fundo8.jpg");
-    /* para não repetir a imagem */
-    background-size: 100%;
-    /* deslocar as imagens X e Y*/
-    background-position: 0 -650px;
-    
-    /*  background-color: #dd2c00; */
-    /* cores https://materializecss.com/color.html */
-    padding-top: 150px;
-    /* Efeito animação de transição de um estado para outro */
-    /* tipo de animação EASE, ALL, CUBIC, etc.
+header {
+  /* escrever o caminho da imagem */
+  background-image: url("../img/fundo8.jpg");
+  /* para não repetir a imagem */
+  background-size: 100%;
+  /* deslocar as imagens X e Y*/
+  background-position: 0 -650px;
+
+  /*  background-color: #dd2c00; */
+  /* cores https://materializecss.com/color.html */
+  padding-top: 150px;
+  /* Efeito animação de transição de um estado para outro */
+  /* tipo de animação EASE, ALL, CUBIC, etc.
        o tempo em segundos */
-    /* pode ser usado para vários itens */
-    transition: ease 1s;
+  /* pode ser usado para vários itens */
+  transition: ease 1s;
 }
 /* foormatar a tag h1 que está dentro do header. 
 Veja como fazemos para ficar específica */
-header h1{
-   color:#000; /* cor da letra */
-   font-family: arial; /*mudar o tipo da letra para arial 
+header h1 {
+  color: #000; /* cor da letra */
+  font-family: arial; /*mudar o tipo da letra para arial 
 se o nome da fonte tiver espaço tem que ficar entre 
 aspas para não dar erro*/
-   text-align: center; /* alinhamento do texto ao centro */
+  text-align: center; /* alinhamento do texto ao centro */
 }
-header nav{
-    background-color: #600;
-    text-align: center;
-    padding: 5px;
+header nav {
+  background-color: #600;
+  text-align: center;
+  padding: 5px;
 }
 /* exibir os itens da lista um ao lado do outro. 
 Usaremos o comando display (telaiexibir) 
 lado a lado inline-block (blocos em linha) */
 header nav ul li {
-display:inline-block;
-/* distanciar os itens da lista */
-margin: 5px;
+  display: inline-block;
+  /* distanciar os itens da lista */
+  margin: 5px;
 }
 
-header nav ul li a{
-color: #fff;
-font-family: arial;
-/* retirar a decoração do texto, ou seja, 
+header nav ul li a {
+  color: #fff;
+  font-family: arial;
+  /* retirar a decoração do texto, ou seja, 
 remover o underline */
-text-decoration: none;
-} 
+  text-decoration: none;
+}
 /* passar o maouse sobre, a pessoa percebe que tem 
 uma interação e um link ali  */
-header nav ul li a:hover{
-color: rgb(255, 106, 47);
+header nav ul li a:hover {
+  color: rgb(255, 106, 47);
+}
+footer {
+  /*  aplicar uam cor de fundo ao rodapé */
+  background-color: rgb(114, 37, 2);
+  /* aplicar margem interna */
+  padding: 20px;
+  /* empurra a caixa para baixo */
+  padding-top: 40px;
+  /* altura do rodapé */
+  height: 110px;
+}
+/* Para fazer uma formatação em uma tag que tenha um 
+  id definido é necessário que você adicione um sustenido 
+  (#) ao início do nome do id. Neste caso nossa div tem id 
+  chamado end, então aplicamos desta forma: #end  */
+footer #end {
+  color: #fff;
+  font-family: verdana;
+  font-size: 10pt;
+  float: left;
+  /* onde começa e onde termina 
+   border: solid 1px green; */
+}
+footer #redes {
+  /* onde começa onde termina
+  border: solid 1px green; */
+  float: right;
+}
+footer #redes a {
+  /* para tirar as marcações azuis dos links */
+  text-decoration: none;
+}
+footer #redes a img {
+  /*  ajustar o tamanho largura da imagem, nesse caso diminuir */
+  width: 40px;
+  /*  ajustar o tamanho altura da imagem, nesse caso diminuir */
+  height: 40px;
+  /* distância entre eles */
+  margin: 5px;
+  /* animação  */
+  transition: ease 0.5s;
+}
+footer #redes a img:hover {
+  /*realizar uma rotação de 360 graus (deg) */
+  transform: rotate(360deg);
 }
