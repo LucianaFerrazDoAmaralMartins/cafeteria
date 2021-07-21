@@ -173,3 +173,64 @@ main #video iframe{
     height: 400px;
 }
 /* --------- Fim da formatação da página HISTORIA --------- */
+
+/* --------- Início da formatação da página CARDAPIO ------- */
+
+/* colocar borda em todas as DIV's para saber quem é quem */
+/* tudo que tem # é ID é uma DIV */
+/* main #area,  
+main #area #conteudo, 
+main #area #conteudo #img, 
+main #area #conteudo #texto{
+  border: 2px solid greenyellow;
+}*/
+
+/* repete os dois img: um é DIV e o outro é uma tag */
+main #area #conteudo #img img{
+  width: 200px;
+  height: 180px;
+
+}
+main #area #conteudo #img{
+  /* largura da caixa da imagem */
+  width: 210px;
+  /* Fazer a caixa de imagem flutuar para a esquerda, 
+  para ficar lado a lado com o texto */
+  float: left;
+}
+/* largura da caixa do texto*/
+main #area #conteudo #texto{
+   width: 800px;
+   /* Fazer a caixa de texto flutuar para a esquerda, 
+   para ficar lado a lado com a imagem */
+   float: left;
+}
+/* aplicar a exibição (display) inline-block para as 
+caixas area e conteudo (para as duas separadas por vírgula)*/
+main #area, main #area #conteudo{
+  display: inline-block;
+  width: 90%;
+
+}
+main #area #conteudo #texto h5{
+  font-family: arial;
+  font-size: 14pt;
+  margin: 5px;
+  }
+  main #area #conteudo #texto span{
+    color: red;
+  }
+  main #area #conteudo {
+  /* desprender do canto esquerdo */
+  margin-left: 50px; 
+   /*aplicar uma borda na parte inferior desta caixa*/
+   border-bottom: 1px solid silver;
+  }
+  main h3{
+    font-family: arial;
+    font-size: 20pt;
+    /* descolar dos cantos*/
+    margin: 50px;
+
+  }
+/* --------- Fim da formatação da página CARDAPIO ------- */
