@@ -234,3 +234,12 @@ main #area #conteudo #texto h5{
 
   }
 /* --------- Fim da formatação da página CARDAPIO ------- */
+
+/* ----------Início da formatação da página de localização */
+main #mapa iframe{
+  width: 100%;
+  height: 500px;
+}
+
+
+/* ----------Fim da formatação da página de localização */
