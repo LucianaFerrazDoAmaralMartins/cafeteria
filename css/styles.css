@@ -111,66 +111,66 @@ main h2 {
   /* uma linha fina */
   border-bottom: #600 1px solid;
 }
-main p{
-    /* trabalhar o bloco do texto, reduzir a margem esquerda e direita */
-    margin-left: 100px;
-    margin-right: 100px;
-     /* entre um parágrafo e o outro colocar um margem inferior, distanciamento entre os parágrafos */
-    margin-bottom: 30px; 
-    /* justificado */
-    text-align: justify;
-    font-size: 12pt;
-    /* altura da linha (efeito de espaçamento entre linhas) 
+main p {
+  /* trabalhar o bloco do texto, reduzir a margem esquerda e direita */
+  margin-left: 100px;
+  margin-right: 100px;
+  /* entre um parágrafo e o outro colocar um margem inferior, distanciamento entre os parágrafos */
+  margin-bottom: 30px;
+  /* justificado */
+  text-align: justify;
+  font-size: 12pt;
+  /* altura da linha (efeito de espaçamento entre linhas) 
     no word altura de linha = 1,5)*/
-    /* cálculo = tamanho da fonte + 1,5 = 25  */
-    line-height: 25pt;
-    font-family: arial;   
+  /* cálculo = tamanho da fonte + 1,5 = 25  */
+  line-height: 25pt;
+  font-family: arial;
 }
 
-main #imghome{
-    /* centralizar a imagem */
-    text-align: center;
+main #imghome {
+  /* centralizar a imagem */
+  text-align: center;
 }
-main #imghome img{
-    /* arredondar os cantos da imagens, preciso de imagens quadradas */
-    /* ideal ter a imagem do tamanho correto */
-    width: 500px; /* largura da imagem */
-    height: 500px;/* altura da imagem */
-    /*  vamos arredondar os cantos da imagem com o comando 
+main #imghome img {
+  /* arredondar os cantos da imagens, preciso de imagens quadradas */
+  /* ideal ter a imagem do tamanho correto */
+  width: 500px; /* largura da imagem */
+  height: 500px; /* altura da imagem */
+  /*  vamos arredondar os cantos da imagem com o comando 
     border-radius. O valor pode ser em pixel (px) ou porcentagem (50%)*/
-    border-radius: 50%;
-    /* distanciar as imagens uma da outra */
-    margin: 20px;
-    /* efeito desfocado (transparência) de 0 até 1, 0.5 (50%) quando passa o mouse por cima ela aparece */
-    opacity: 0.6;
-    transition: ease 0.5s;
+  border-radius: 50%;
+  /* distanciar as imagens uma da outra */
+  margin: 20px;
+  /* efeito desfocado (transparência) de 0 até 1, 0.5 (50%) quando passa o mouse por cima ela aparece */
+  opacity: 0.6;
+  transition: ease 0.5s;
 }
 /* efeito de passar o mouse encima */
-main #imghome img:hover{
-    /* 100% de visibilidade */
-    opacity: 1;
-    /* brincar com o tamanho da imagem, aumento da escala em 10%, se for 20% seria 1.2 */
-    transform: scale(1.1);
+main #imghome img:hover {
+  /* 100% de visibilidade */
+  opacity: 1;
+  /* brincar com o tamanho da imagem, aumento da escala em 10%, se for 20% seria 1.2 */
+  transform: scale(1.1);
 }
 
 /* --------- Fim da formatação da página INDEX --------- */
 
 /* --------- Início da formatação da página HISTORIA --------- */
 
-main #imghistoria{
-    text-align: center;
+main #imghistoria {
+  text-align: center;
 }
-main #imghistoria img{
-    width: 300px;
-    height: 300px;
-    margin: 10px;
+main #imghistoria img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
 }
-main #video{
-    text-align: center;
+main #video {
+  text-align: center;
 }
-main #video iframe{
-    width: 90%;
-    height: 400px;
+main #video iframe {
+  width: 90%;
+  height: 400px;
 }
 /* --------- Fim da formatação da página HISTORIA --------- */
 
@@ -186,12 +186,11 @@ main #area #conteudo #texto{
 }*/
 
 /* repete os dois img: um é DIV e o outro é uma tag */
-main #area #conteudo #img img{
+main #area #conteudo #img img {
   width: 200px;
   height: 180px;
-
 }
-main #area #conteudo #img{
+main #area #conteudo #img {
   /* largura da caixa da imagem */
   width: 210px;
   /* Fazer a caixa de imagem flutuar para a esquerda, 
@@ -199,47 +198,101 @@ main #area #conteudo #img{
   float: left;
 }
 /* largura da caixa do texto*/
-main #area #conteudo #texto{
-   width: 800px;
-   /* Fazer a caixa de texto flutuar para a esquerda, 
+main #area #conteudo #texto {
+  width: 800px;
+  /* Fazer a caixa de texto flutuar para a esquerda, 
    para ficar lado a lado com a imagem */
-   float: left;
+  float: left;
 }
 /* aplicar a exibição (display) inline-block para as 
 caixas area e conteudo (para as duas separadas por vírgula)*/
-main #area, main #area #conteudo{
+main #area,
+main #area #conteudo {
   display: inline-block;
   width: 90%;
-
 }
-main #area #conteudo #texto h5{
+main #area #conteudo #texto h5 {
   font-family: arial;
   font-size: 14pt;
   margin: 5px;
-  }
-  main #area #conteudo #texto span{
-    color: red;
-  }
-  main #area #conteudo {
+}
+main #area #conteudo #texto span {
+  color: red;
+}
+main #area #conteudo {
   /* desprender do canto esquerdo */
-  margin-left: 50px; 
-   /*aplicar uma borda na parte inferior desta caixa*/
-   border-bottom: 1px solid silver;
-  }
-  main h3{
-    font-family: arial;
-    font-size: 20pt;
-    /* descolar dos cantos*/
-    margin: 50px;
-
-  }
+  margin-left: 50px;
+  /*aplicar uma borda na parte inferior desta caixa*/
+  border-bottom: 1px solid silver;
+}
+main h3 {
+  font-family: arial;
+  font-size: 20pt;
+  /* descolar dos cantos*/
+  margin: 50px;
+}
 /* --------- Fim da formatação da página CARDAPIO ------- */
 
 /* ----------Início da formatação da página de localização */
-main #mapa iframe{
+main #mapa iframe {
   width: 100%;
   height: 500px;
 }
-
-
 /* ----------Fim da formatação da página de localização */
+
+/* ----------Início da formatação da página CONTATO */
+form {
+  /* borda para visualizar essa área na página */
+  /* border: 1px solid blue; */
+  /* reduzir a 1 terço */
+  width: 500px;
+  /* alinhar o formulário ao centro iremos utilizar o 
+  comando margin-left: auto e o comando margin-right:auto;*/
+  margin-left: auto;
+  margin-right: auto;
+  /* margem interna dentro do formulário */
+  padding: 20px;
+}
+/* quebra de linha */
+/* Formatação dos elementos do formulário capturando todos por 
+seu respectivos tipos */
+/* aplica um VIRGULA para separar os itens */
+input[type="text"],
+input[type="email"],
+/* dizer exatamente qual span */
+form span,textarea {
+  display: block;
+  /* ocupa 100% do espaço disponível para ela */
+  width: 96%;
+  /* distanciar dos outros elementos */
+  margin: 5px;
+  /* margem interna das caixas */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin: 5px;
+  font-family: arial;
+  font-size: 10pt;
+}
+select {
+  margin: 5px;
+}
+textarea {
+  height: 200px;
+}
+/* formatação do botão enviar */
+input[type="submit"] {
+  width: 80px;
+  height: 30px;
+  background-color: #600;
+  /* arredondar os cantos do botão */
+  border-radius: 10%;
+  /* cor da letra */
+  color: #fff;
+  /* centralizar o botão */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* ----------Fim da formatação da página CONTATO */

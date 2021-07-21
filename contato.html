@@ -43,7 +43,43 @@
     </header>
     <!-- Fim da área do header -->
     <!--  Início da área do main -->
-    <main></main>
+    <main>
+       <h2> Contato </h2>
+    <!-- Criação do formulário de contato com as tags:
+         form -> formulário; 
+         input -> (caixa para escrever algo dentro dela) 
+                 Caixa para o usuário realizar a entrada de texto;   
+         input radio -> Botão de opção; 
+         select -> Menu de seleção;
+         textarea -> Caixa onde o usuário poderá escrever uma mensagem; 
+         input submit -> Botão para envio dos dados. -->
+        
+         <!-- form -> formulário -->
+         <!-- apagar o ACTION pois não vai para lugar nenhum  -->
+         <form>
+             <input type="text" placeholder="Nome Completo" required>
+             <input type="email" placeholder="E-mail" required>
+             <span>
+                <!-- input radio -> Botão de opção -->
+                 <input type="radio" name="sexo" value="Masculino"> Masculino 
+                 <input type="radio" name="sexo" value="Feminino"> Feminino
+                 <input type="radio" name="sexo" value="Outros"> Outros  
+                </span>
+                <!-- select -> Menu de seleção -->
+                <select>
+                   <option>Elogio</option>
+                   <option>Sugestão</option>
+                   <option>Crítica</option>
+                   <option>Dúvidas</option>
+                   <option>Outros</option>
+                </select>
+                <!-- textarea -> Caixa onde o usuário poderá escrever uma mensagem-->
+                <textarea>Mensagem</textarea>
+                <!-- input submit -> Botão para envio dos dados -->
+                <input type="submit" value="Enviar"> 
+         </form> 
+        
+    </main>
     <!--  Fim da área do main -->
 
     <!--  Início da área do footer -->
